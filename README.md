@@ -3,8 +3,9 @@
 Authors:
 
 * Samuel A. Rebelsky
-* Your Name Here
-* Your Name Here
+* Lily Blanchard
+* Tiffany Yan
+* Moise Milenge
 
 The latest version of the CSC-207 lab on linear structures, now with Maven.
 
