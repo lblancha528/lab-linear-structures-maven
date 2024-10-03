@@ -1,12 +1,15 @@
 package edu.grinnell.csc207.experiments;
 
 import java.io.PrintWriter;
+import edu.grinnell.csc207.util.StringUtils;
 
 /**
  * Experiments with matching parentheses and other such things.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Lily Blanchard
+ * @author Tiffany Yan
+ * @author Moise Milenge
  */
 public class MatchingExperiments {
   // +---------+-----------------------------------------------------
@@ -20,7 +23,7 @@ public class MatchingExperiments {
     pen.print("checkMatching(\"" + str + "\") = ");
     pen.flush();
     try {
-      pen.println(checkMatching(str));
+      pen.println(StringUtils.checkMatching(str));
     } catch (Exception e) {
       pen.println("*** ERROR *** " + e.toString());
     } // try/catch
