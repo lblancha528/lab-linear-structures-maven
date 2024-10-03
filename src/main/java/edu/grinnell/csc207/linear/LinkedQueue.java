@@ -57,7 +57,7 @@ public class LinkedQueue<T> implements Queue<T> {
 
   @Override
   public void put(T val) throws Exception {
-    throw new Exception("Unimplemented");
+    this.back.next = new Node<T>(val, null);
   } // put(T)
 
   @Override
