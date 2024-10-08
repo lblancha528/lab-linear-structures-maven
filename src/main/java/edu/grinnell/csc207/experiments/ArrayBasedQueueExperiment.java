@@ -24,11 +24,13 @@ public class ArrayBasedQueueExperiment {
     expt.peek();
     expt.put("c");
     expt.peek();
+    expt.put("d");
     expt.get();
     expt.peek();
     expt.get();
     expt.put("x");
     expt.peek();
+    expt.get();
     expt.get();
     expt.get();
 
