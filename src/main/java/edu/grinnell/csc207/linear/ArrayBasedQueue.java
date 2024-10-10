@@ -114,6 +114,8 @@ public class ArrayBasedQueue<T> implements Queue<T> {
     return new ArrayBasedQueueIterator<T>(this);
   } // iterator()
 
+
+
   // +----------------+--------------------------------------------------
   // | Helper Methods |
   // +----------------+
@@ -136,6 +138,9 @@ class ArrayBasedQueueIterator<T> implements Iterator<T> {
   // | Fields |
   // +--------+
 
+  ArrayBasedQueue<T> abq;
+  int i;
+
   // +--------------+----------------------------------------------------
   // | Constructors |
   // +--------------+
@@ -144,7 +149,8 @@ class ArrayBasedQueueIterator<T> implements Iterator<T> {
    * Create a new iterator.
    */
   public ArrayBasedQueueIterator(ArrayBasedQueue<T> q) {
-    // STUB
+    this.abq = q;
+    this.i = 0;
   } // ArrayBasedQueueIterator
 
   // +---------+---------------------------------------------------------
@@ -156,14 +162,12 @@ class ArrayBasedQueueIterator<T> implements Iterator<T> {
     if (!this.hasNext()) {
       throw new NoSuchElementException("no elements remain");
     } // if no elements
-    // STUB
-    throw new NoSuchElementException("unimplemented");
+    return this.abq.values[i++];
   } // next()
 
   @Override
   public boolean hasNext() {
-    // STUB
-    return false;
+    return this.i < this.abq.size;
   } // hasNext()
 
   @Override

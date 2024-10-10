@@ -21,7 +21,7 @@ public class LinearStructureExperiment {
    * A series of experiments on a structure of strings.
    */
   public static void expt01(LinearStructure<String> ls, String prefix) throws Exception {
-    ReportingLinearStructure<String> expt = new ReportingLinearStructure<String>(ls, prefix);
+    ReportingLinearStructure<String> expt = new ReportingLinearStructure<String>(ls);
     expt.info();
     expt.put("a");
     expt.info();
